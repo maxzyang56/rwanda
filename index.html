@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Visualize Hospital Scores in Rwanda</title>
+    <title>Visualize Hospital Scores in Kigali | ArcGIS Maps SDK for JavaScript 4.30</title>
     <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.30/"></script>
 
@@ -149,7 +149,10 @@
             container: "viewDiv",
             map: map,
             center: [29.7587, -1.9439],
-            zoom: 8
+            zoom: 8,
+            ui: {
+              components: ["attribution"] // Disable default UI components except attribution
+            }
           });
 
           const popupTemplate = {
